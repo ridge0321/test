@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding-bottom: 0rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#invitationHidden{
+    display: none;
+}
+
+#messageForm {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    width: calc(100% - 300px);
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+#messageInput {
+    border: none;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    margin: 0.25rem;
+}
+
+#messageInput:focus {
+    outline: none;
+}
+
+#form>button {
+    background: #333;
+    border: none;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages>li {
+    padding: 0.5rem 1rem;
+}
+
+#messages>li:nth-child(odd) {
+    background: #efefef;
+}
+
+#flex {
+    display: flex;
+}
+
+#sideber {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* background-color: #040450; */
+    background-color:#3F0E40;
+    color: #fff;
+    height: 100vh;
+    min-width: 280px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+#content {
+    width: 100%;
+    padding-bottom: 64px;
+}
+
+#sideber-content-height {
+    height: 100%;
+    /*中身の高さの指定が必要 */
+}
+
+/* #channels li{
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+} */
+
+.selected{
+    background-color: #1164A3;
+}
+
+#selected{
+    background-color: #1164A3;
+}
+
+.classNames{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 10%;
+    cursor: pointer;
+    /* background-color: transparent; */
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+.options{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 10%;
+    cursor: pointer;
+    /* background-color: transparent; */
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+.options::before{
+    display: marker;
+    content: '+　';
+}
+
+.normal::before{
+    display: marker;
+    content: '#　';
+}
+
+
+/* .private::before{
+    position:absolute;
+    left:0; 
+    content:"";
+    display:inline-block;
+    width:2em;
+    height:2em;
+    background:url(./../prilock.png) no-repeat;
+    background-size:contain;
+} */
+
+.private::before{
+    display: marker;
+    content: '🔒　';
+}
+
+.notSelected:hover{
+    background-color:#230424;
+}
+
+.options:hover{
+    background-color:#230424;
+}
+
+#channels{
+    padding-left:8%;
+}
+
+#optionList{
+    padding-left:8%;
+}
